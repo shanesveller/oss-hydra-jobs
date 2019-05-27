@@ -1,0 +1,13 @@
+conventions:
+  categories:
+    - {tag: "", title: "Notes"}
+    - {tag: "security", title: "Security Updates"}
+    - {tag: "break", title: "Breaking Changes"}
+    - {tag: "feature", title: "Features"}
+    - {tag: "fix", title: "Fixes"}
+    - {tag: "add", title: "Additions"}
+    - {tag: "remove", title: "Removals"}
+    - {tag: "deprecate", title: "Deprecations"}
+  scopes:
+    - {tag: "", title: ""}
+    - {tag: "doc", title: "Documentation"}
