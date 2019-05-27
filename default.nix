@@ -5,21 +5,19 @@
     EOF
     cat > $out <<EOF
     {
-        "master": {
-            "enabled": 1,
-            "hidden": false,
-            "description": "js",
-            "nixexprinput": "src",
-            "nixexprpath": "release.nix",
-            "checkinterval": 300,
-            "schedulingshares": 100,
-            "enableemail": false,
-            "emailoverride": "",
-            "keepnr": 3,
-            "inputs": {
-                "src": { "type": "git", "value": "git://github.com/shlevy/declarative-hydra-example.git", "emailresponsible": false },
-                "nixpkgs": { "type": "git", "value": "git://github.com/NixOS/nixpkgs.git release-16.03", "emailresponsible": false }
-            }
+        "enabled": 1,
+        "hidden": false,
+        "description": "Jobsets",
+        "nixexprinput": "src",
+        "nixexprpath": "default.nix",
+        "checkinterval": 300,
+        "schedulingshares": 1,
+        "enableemail": false,
+        "emailoverride": "",
+        "keepnr": 10,
+        "inputs": {
+          "src": { "type": "git", "value": "https://github.com/shanesveller/oss-hydra-jobs.git develop", "emailresponsible": false },
+          "nixpkgs": { "type": "git", "value": "https://github.com/nixos/nixpkgs-channels nixos-19.03", "emailresponsible": false }
         }
     }
 
